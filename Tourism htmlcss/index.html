@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism</title>
+    <link rel="stylesheet" href="style.css">
+    
+<body class="body1">
+
+  <!-- picture -->
+
+    <center>
+      <figure class="swap-on-hover">
+        <img src="/images/1.jpg" alt="" class="swap-on-front">
+        <img src="/images/2.jpg" alt="" >
+    </figure>
+  </center>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- picture movement -->
+
+  <section class="name">
+    <marquee direction="right" behavior="alternate">
+        <h1>Tehran Province</h1>
+    </marquee>
+</section>
+<!-- menu bar to access to other web pages -->
+
+    <div class="navbar">
+      <ul class="menu">
+        <li>
+          <a href="#link1">Tehran province</a>
+        </li>
+        <li>
+          <a href="geography.html">Geography</a>
+        </li>
+        <li>
+          <a href="#link3">Culture , Religious and Food</a>
+          <ul class="submenu">
+            <li>
+              <a href="culture.html">Culture and Movement</a>
+            </li>
+            <li>
+              <a href="religious.html">Religious</a>
+            </li>
+            <li>
+              <a href="food.html">Food</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="aboutus.html">About Us</a>
+        </li>
+      </ul> 
+    </div>
+    <br><br><br><br>
+
+    <div class="box">
+
+      <!-- text from an other external web page -->
+
+      <div class="div1">
+        <q>
+          Tehran province (Persian: استان تهران Ostān-e Tehrān) is one of the 31 provinces of Iran.
+          It covers an area of 18,814 square kilometres (7,264 sq mi) and is located to the north of the central plateau of Iran.
+
+          At the time of the National Census of 2006, the province had a population of 13,281,858 in 3,729,010 households.
+          The following census in 2011 counted 12,183,391 people in 3,731,480 households, by which time Karaj, Nazarabad, and Savojbolagh Counties had been separated from the province to become Alborz province.
+          The province was made a part of the First Region with its secretariat located in Tehran, upon the division of the provinces into 5 regions, solely for coordination and development purposes on June 22, 2014.
+          According to the latest census in 2016, the population of the province had increased to 13,267,637 in 4,288,563 households.
+        
+          Tehran province borders Mazandaran province in the north, Qom province in the south, 
+          Semnan province in the east, Alborz province in the west and Markazi province in the southwest. 
+          The metropolis of Tehran is the capital city of the province and of Iran.
+          
+          Tehran province is the richest in Iran, as it contributes approximately 29% of the country's gross domestic product (GDP).
+          Furthermore, it houses approximately 18% of the country's population and is the most industrialized province in Iran, with nearly 94% of its residents living in the cities as of 2016.
+        
+          The province gained importance when Tehran was proclaimed the capital by the Qajar dynasty in 1778.
+          Today, Tehran, with a population of 14 million, is ranked amongst the 40 most populous metropolitan cities of the world.
+        </q>
+      </div>
+    </div> 
+    
+    <br><br><br><br>
+
+    <center><hr class="hr" ></center>
+
+    <h2 style="text-align:center">Tehran In One Look</h2>
+
+    <center><hr class="hr"></center><br><br>
+
+    <!-- a slide show gallery -->
+
+      <div class="slideshow-container">
+        <div class="mySlides1">
+          <img src="images/5.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+          <img src="images/6.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+          <img src="images/7.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+          <img src="images/8.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+          <img src="images/9.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+          <img src="images/10.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+          <img src="images/11.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+          <img src="images/12.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+
+      <script>
+      let slideIndex = [1,1];
+      let slideId = ["mySlides1", "mySlides2"]
+      showSlides(1, 0);
+      showSlides(1, 1);
+
+      function plusSlides(n, no) {showSlides(slideIndex[no] += n, no);}
+
+      function showSlides(n, no) {let i;
+                                  let x = document.getElementsByClassName(slideId[no]);
+                                  if (n > x.length) {slideIndex[no] = 1}    
+                                  if (n < 1) {slideIndex[no] = x.length}
+                                  for (i = 0; i < x.length; i++) { x[i].style.display = "none";}
+                                  x[slideIndex[no]-1].style.display = "block";}
+      </script>
+      <br>
+
+      <!-- a 3 coloumn display for photoes and text -->
+
+  <div class="box">
+    <div class="card">
+      <img src="images/2.jpg" alt="" class="image1">
+      <img src="images/3.jpg" alt="" class="image1">
+      <img src="images/4.jpg" alt="" class="image1">
+    </div>
+    <div class="div1">
+      <q>
+        <abbr title="Capital of Iran called Tehran Province">Tehran or Teheran</abbr>
+        , capital and largest city of Iran, and capital of Tehran province, is located in the northern part of the country. Tehran is Iran's administrative, economic, 
+        and cultural centre as well as the major industrial and transport centre of the region. The city sits on the slopes of the Elburz Mountains, about 1,173m above sea level,
+          on the northwestern fringes of the Kavir desert. Although the name Tehran means "warm place", the climate has marked seasonal contrasts, with short springs and autumns separating cold winters and hot, dry summers.
+
+        Tehran is one of the largest urban centres in the Middle East. In the 1980s the metropolitan region grew rapidly, partly due to surging birthrates following the 1979 Islamic Revolution, 
+        but also because of increased migration from rural to urban areas, as well as an influx of refugees from the Iran-Iraq War and fighting in Afghanistan. The density of the inner city forced many of these migrants to settle in outlying areas.
+
+        The aim of these images acquired by the Landsat family, with a time window (before/after) of 28 years, is to show how Tehran has changed since 1988. The skyline of the city has developed with new areas constructed,
+        particularly in the north west of the city and new infrastructure; such as the area where the airport is now located in the south.
+
+        Another aim of these images is to promote the opportunity to download Landsat data through the ESA portals (or third party mission free catalogue), where images captured every day are made available in near real time to the users and the scientific community.
+      </q>
+    </div>
+  </div>   
+</body>
+
+<br><br>
+<!-- address and communication -->
+
+<footer>
+  <fieldset>
+      <legend><h4>Connect Us:</h4></legend>
+      <address>
+          Address:Iran,Tehran,Enghelab Squre,No:120 <br><br>
+          E-mail:TehranTourism@gmail.com <br><br>
+          tel_fax:021-11221122_24<br><br>
+      </address>
+  </fieldset>
+</footer>
+</html>

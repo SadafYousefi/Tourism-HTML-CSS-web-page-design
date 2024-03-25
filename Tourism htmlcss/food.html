@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body class="body5">
+        <img src="images/16.jpg" alt="" class="image">
+
+        <!-- title definition-->
+    
+        <h1>Tehran Province</h1>
+    
+        
+        <br><br><br><br>
+    
+        <div class="box">
+    
+            <div class="div1">
+                <!-- paragraph with headers -->
+                <p>
+                    <h4>Eatting:</h4>
+                    Kebab shops are scattered all over the province. If you are sick or not into kebab, there are lots of international restaurants in the city which range from Persian to Italian.
+
+                    <h4>Drinks:</h4>
+                    There are a lot of tea houses in the province, especially the capital. Soft drinks such as cola, Fanta and Pepsi are also available. The ZamZam Cola is the local Iranian cola. 
+                    <h5>With details:</h5>
+                    The dishes of Tehran, including Dempakhtak, Sarganjeshki, Ashkeneh and some stews, invite you to a journey
+                    Although alcohol is not allowed, it is drunk in some underground parties and weddings.
+                    through time with their delicious taste. So, on your trip to Tehran, be sure to try these simple and delicious dishes. Some of these foods are not known;
+                    while some others are still cooked in the homes of Tehranis. Stay with us to introduce you to the traditional dishes of Tehran.
+
+                </p>
+            </div>
+        </div> 
+        
+        <br><br><br><br>
+
+         <!-- title definition-->
+    
+        <h2 style="text-align:center">Tehran In One Look</h2>
+
+        <!-- a slide show gallery -->
+    
+            <div class="slideshow-container">
+            <div class="mySlides1">
+                <img src="images/23.jpg" style="width:100%">
+            </div>
+    
+            <div class="mySlides1">
+                <img src="images/21.jpg" style="width:100%">
+            </div>
+    
+            <div class="mySlides1">
+                <img src="images/48.jpg" style="width:100%">
+            </div>
+    
+            <div class="mySlides1">
+                <img src="images/49.jpg" style="width:100%">
+            </div>
+    
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+    
+            <script>
+            let slideIndex = [1,1];
+            let slideId = ["mySlides1", "mySlides2"]
+            showSlides(1, 0);
+            showSlides(1, 1);
+    
+            function plusSlides(n, no) {showSlides(slideIndex[no] += n, no);}
+    
+            function showSlides(n, no) {let i;
+                                        let x = document.getElementsByClassName(slideId[no]);
+                                        if (n > x.length) {slideIndex[no] = 1}    
+                                        if (n < 1) {slideIndex[no] = x.length}
+                                        for (i = 0; i < x.length; i++) { x[i].style.display = "none";}
+                                        x[slideIndex[no]-1].style.display = "block";}
+            </script>
+            <br><br><br><br>
+            <center><hr size="4px" width="60%" color="black" ></center>
+
+            <center>
+                <div class="container">
+                    <ul class="colors">
+                        <li class="color-1">Drinks</li>
+                        <li class="color-2">Local Cuisine</li>
+                        <li class="color-3">Street Food</li>
+                        <li class="color-4">Traditional Food</li>
+                        <li class="color-5">International  Cuisine</li>
+                    </ul>
+                </div>
+            </center>
+    
+            <center><hr size="4px" width="60%" color="black" ></center>
+
+<!-- a 3 coloumn display for photoes -->
+    
+        <div class="box">
+        <div class="card">
+            <img src="images/47.jpg" alt="" class="image1">
+            <img src="images/22.jpg" alt="" class="image1">
+            <img src="images/26.jpg" alt="" class="image1">
+        </div>
+        <div class="div1">
+            <p>
+                
+<!-- un-ordered list -->
+
+                <ul>
+                    <li>Gheimeh</li>
+                    <li>Qorme-Sabzi stew</li>
+                    <li>Noodle soup</li>
+                    <li>Melting pot</li>
+                    <li>Nut broth</li>
+                    <li>Hand to neck meatballs</li>
+                    <li>Spindle</li>
+                    <li>The bottom of Firuzkohi</li>
+                    <li>Rice and beans</li>
+                    <li>Valk Plow</li>
+                    <li>Demi bulghur</li>
+                    <li>Bean sprouts</li>
+                    <li>Spinach tear</li>
+                </ul>
+            </p>
+        </div>
+        <br><br>
+
+    </body>
+</html>

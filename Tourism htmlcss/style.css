@@ -1,0 +1,215 @@
+/* (index)*/
+
+.body1{background-color: rgb(69, 97, 89);}
+
+/* عنوان */
+
+.name{background-color: rgb(40, 22, 51);
+      color: rgb(200, 131, 203);
+      font-size: x-large;
+      height: min-content;}
+
+
+/* #نوارمنو */
+
+.navbar {background: #000000;direction: rtl;text-align: right;padding-right: 30px;}
+ul.menu li { display: inline-block;list-style: none; }
+ul.menu li a { display:inline-block;padding: 12px;color: #fff;text-decoration: none; }
+ul.menu li a:hover { background: rgb(80, 9, 98); }
+ul.submenu { display: none; }
+ul.menu li i { vertical-align: middle;margin-right: 5px; }
+ul.menu li:hover ul.submenu { display: block;background: #000000;width: 160px; } 
+ul.submenu li { display: block; border-bottom: 1px solid #fff; }
+ul.submenu { display: none; width: 160px; position: absolute;top:42px;background: #000000;}
+ul.submenu li { display: block; border-bottom: 1px solid #fff; }
+ul.submenu li a { display: block;}
+ul.menu li:hover ul.submenu { display: block;background: #000000;}
+ul.menu li { display: inline-block;list-style: none;transition: all 0.4s; position: relative; }
+
+/* زیرمنو */
+
+ul.submenu { display: none; width: 160px; position: absolute;top:42px;background: #000000;}
+ul.submenu li { display: block; border-bottom: 1px solid #fff; }
+ul.submenu li a { display: block;}
+ul.menu li:hover ul.submenu { display: block;background: #000000;} 
+
+/* عکس */
+
+.image{align-items: center;width: 100%;}   
+
+.div1 {column-count: 3;
+       column-gap: 50px;
+       column-width: 100px;
+       column-rule-width: 1px
+      }
+
+.image1{width: 480px;
+        height: 300px;
+        box-shadow: 1px,1px,1px,1px Teal;
+        margin:5% auto;
+        column-count: 3;
+        column-gap: 20px;} 
+
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;
+    width: 100%;}
+
+/* Slideshow container */
+
+.slideshow-container {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  margin: auto;}
+
+/* Next & previous buttons */
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    object-fit: cover;}
+  
+  /* Position the "next button" to the right */
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    object-fit: cover;}
+  
+  /* On hover, add a grey background color */
+
+  .prev:hover, .next:hover {
+    background-color: #f1f1f1;
+    color: black;
+    object-fit: cover;}
+
+
+/* Culture */
+
+.body2{background-color: rgb(143, 182, 110);}
+
+/*(Geography) */
+
+.body3{background-color: rgb(193, 156, 227);}
+
+/* Religious */
+
+.body4{background-color: rgb(185, 188, 113);}
+
+/* Food  */
+
+.body5{background-color: rgb(172, 134, 108);}
+
+/* عنوان ها */
+
+.h2{background-color: rgb(116, 168, 179);
+    align-items: safe;
+    height: 35px;
+    width: 50%;}
+
+.h3{background-color: rgb(68, 112, 102);
+    align-items: safe;
+    height: 30px;
+    width: 30%;
+    text-align:center}
+
+.image2{width: 50%;
+        height: 50%;}
+        .containar{
+          margin: 0 auto;
+          max-width: 700px;
+          padding: 10px 0;
+      }
+      
+
+/* نوار رنگی */
+
+    .colors li{
+        display: inline-block;
+        color: aliceblue;
+        font-weight: bold;
+        text-align: center ;
+        line-height: 100px;
+        width:190px ;
+        height: 100px;
+        margin-bottom:3px ;
+    }
+    
+    .color-1{
+        background-color: rgba(131, 14, 84, 0.3);
+    }
+    .color-2{
+        background-color: rgba(131, 14, 84,.5);
+    }
+    .color-3{
+        background-color: rgba(131, 14, 84,0.7);
+    }
+    .color-4{
+        background-color: rgba(131, 14, 84,.9);
+    }
+    .color-5{
+        background-color: rgba(131, 14, 84,1);
+    }
+
+/* تصویر متحرک */
+
+    .swap-on-hover{
+    position:relative ;
+    margin:0 auto;
+    max-width:7000px;
+    align-items: center;
+}
+.swap-on-hover img{
+    position:absolute ;
+    top: 0 ;
+    left: 0;
+    width:1450px;
+    height: 500px;
+    overflow: hidden;
+}
+.swap-on-hover .swap-on-front{
+    z-index: 10;
+    transition: opacity 5s linear;
+    cursor: pointer;
+}
+.swap-on-hover:hover > .swap-on-front{
+    opacity: 0;
+}
+      
+h5{
+    border: 3px dashed;
+    border-radius:50px ;}
+
+#corner_radios{
+  background-repeat:repeat ;
+  border-radius: 15px;
+  background:url(/imags/background\ 1.jpg);
+  background-position: left top;
+  padding: 10px;
+  margin: 10px;
+  width: 50%;
+  }
+
+.p{
+    border: none;
+    text-align: justify;
+    line-height: 2;
+    font-size: 20px;
+    clear: left;
+} 
+
+.hr{size:"4px";
+    width:"70%";
+    color:"black"}

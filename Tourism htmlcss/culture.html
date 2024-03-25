@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture and Movement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body2">
+
+    <!-- picture -->
+
+    <img src="images/2.jpg" alt="" class="image"><br>
+
+    <!-- title definition -->
+
+    <center><h1>Tehran Province</h1></center>
+
+    <!-- devision line definition -->
+
+    <center><hr size="4px" width="70%" color="green" ></center><br><br>
+
+    <!-- add audio -->
+
+    <center><audio src="audioes/Hessam Bahmani -  Tehran  320 - DabMusic.mp3" controls width="45%">cast-1</audio><br><br>
+
+    <br><br><br><br>
+
+    <!-- title definition -->
+
+    <h2 class="h2">Cultural life</h2>
+
+    <div class="box">
+        <div class="div1">
+
+    <!-- text from an other external web page -->
+
+            <q>  
+                Even though the city is the meeting point of many ethnic and linguistic groups, it is dominated by the Persian culture and language, as well as the Shiʿi branch of Islam, with which the majority of the population identifies. 
+                The Iranian Revolution had a distinctive cultural impact, limiting particular forms of expression while nurturing others. Within this framework, traditional arts such as calligraphy and music have seen a revival, with many educational institutions and galleries involved. 
+                Alongside the more traditional centres of cultural activity, a number of youth clubs, cultural centres, and libraries were established to cater to the young urban population.
+                
+                Tehrān plays a noted role in the arts. The Tehrān Symphony Orchestra has performed both at home and for international audiences abroad, and the Fajr International Theater Festival is held annually in Tehrān. A number of major museums,
+                also in the city, specialize in a range of themes. The National Museum of Iran specializes in ancient Iranian heritage, the Carpet Museum of Iran displays masterpieces of this national craft, and the Tehrān Museum of Contemporary Art holds works from a number of major international artists.
+                Iran’s film industry, based in Tehrān, has been internationally recognized for its new realist school of cinema and its award-winning films. The Internet is very popular among young Tehrānis, who use Web logs (blogs) for social networking, and among political and civil society groups,
+                who produce Web sites to communicate news and commentary.
+                
+                Persian cuisine is characterized by the use of lime and saffron, the blend of meats with fruits and nuts, a unique way of cooking rice, and Iranian hospitality. Food is subtly spiced, delicate in flavour and appearance, and not typically hot or spicy. Many recipes date back to ancient times;
+                Iran’s historical contacts have assisted in the exchange of ingredients, 
+                flavours, textures, and styles with various cultures ranging from the Mediterranean Sea region to China, some of whom retain these influences today.
+                
+                
+                The demise of the monarchy and the heated political atmosphere of the revolution in the late 1970s led to a proliferation of new media, with many new newspapers and magazines operating freely.
+                These came under pressure as a result of the war and political struggle between various factions. Despite the 2000 ban on many reform-minded newspapers,
+                popular demand for a free press remained strong. The radio and television channels are run by the government.
+                
+                Catedral at night on Plaza de Armas (also known as plaza mayor) Lima, Peru.
+                Britannica Quiz
+                World Capitals Quiz
+                Āzādī Tower
+                The Āzādī (“Freedom”) Tower, Tehrān.
+                Tehrān is a modern, vibrant city. Its skyline is dominated by snowcapped mountains and a proliferation of high-rise buildings, topped by the Borj-e Mīlād (Milad Tower); completed in the early 21st century, the tower rises 1,427 feet (435 metres) above the city. The Āzādī Tower, completed in 1971, greets visitors at the western entrance to the city. For those looking to enjoy Tehrān’s natural beauty, the pedestrian Ṭabīʿat Bridge, completed in 2014, connects two public parks and offers a green view of its own.
+                
+                
+                Tehrān’s architecture is eclectic; while many buildings reflect the international Modernist style, others display postmodern, Neoclassical, and traditional Persian styles. Tehrān’s vibrancy is marked by large crowds of young people, numerous shopping malls, commercial streets, and fast-food outlets, an expanding network of highways, and bustling public squares. The city mixes tradition with modernity and religious imagery with secular lifestyles, as evident in the large roadside boards that display revolutionary religious iconography standing alongside those advertising consumer goods.
+            </q>
+        </div>
+    </div>
+        
+    <br><br><br><br>
+
+    <h3 class="h3">Tehran In One Look</h3>
+
+    <!-- a slide show gallery -->
+
+    <div class="slideshow-container">
+
+        <div class="mySlides1">
+            <img src="images/30.jpg" style="width:100%">
+        </div>    
+
+        <div class="mySlides1">
+            <img src="images/20.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="images/24.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="images/25.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="images/29.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="images/33.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="images/34.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="images/36.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
+
+    <script>
+    let slideIndex = [1,1];
+    let slideId = ["mySlides1", "mySlides2"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+
+    function plusSlides(n, no) {showSlides(slideIndex[no] += n, no);}
+
+    function showSlides(n, no) {let i;
+                                let x = document.getElementsByClassName(slideId[no]);
+                                if (n > x.length) {slideIndex[no] = 1}    
+                                if (n < 1) {slideIndex[no] = x.length}
+                                for (i = 0; i < x.length; i++) { x[i].style.display = "none";}
+                                x[slideIndex[no]-1].style.display = "block";}
+    </script>
+    <br>
+
+<!-- a 3 coloumn display for text -->
+
+    <div class="box">
+        <div class="card">
+        <img src="images/37.jpg" alt="" class="image1">
+        <img src="images/27.jpg" alt="" class="image1">
+        <img src="images/38.jpg" alt="" class="image1">
+    </div>
+        <div class="div1">
+            <p>
+                <!-- title definition -->
+                <h3>Tehran Metro </h3>
+                Main article: Tehran Metro
+                Tehran Metro refers to the collection of urban trains in Tehran as well as the organization of urban trains in Tehran and suburbs .
+                 Although the initial plans of the Tehran subway were laid before the revolution of 1357 ,the operation of the Tehran subway
+                (parts of lines 1, 2 and 5) began during the years 1378 to 1380, and part of the task of transporting passengers within
+                the city and took charge of Borunshahri (Tehran- Karaj ). The first active route was metro route number 5, which carried passengers
+                between Tehran and Karaj . 
+
+                Until the summer of 2007 (July 2007 ), metro trains were running on three main lines, and two more lines are under construction.
+                One of the active lines is intercity (between Karaj and Tehran) and the rest are intracity. Until the end of 2005, the distance of the 
+                operated metro lines was equal to 90 km. 
+
+                Since the end of 2005, with the increase of passengers and the number of trains, a part of the main body of the Tehran and Suburbs Urban
+                Train Organization has been separated and continues to operate as the Tehran and Suburbs Urban Railway Operating Company . 
+
+                According to the comprehensive plan of transportation and traffic of Tehran city, with the construction of 8 subway lines with a length of 250 km,
+                in the perspective of 1404, 6,556,000 passengers will be transported daily in the capital by this vehicle. 
+
+                bus 
+                Buses are one of the most important means of transportation in Tehran. The bus service in Tehran has continued to expand since the
+                time of the horse-drawn carriage service of the Qajar era and the so-called "belt line" bus service that was established in Tehran in the 1930s.
+
+                Currently, 15 million daily trips and 19 million transfers are made in Tehran city, with the operation of 6,050 buses, only 3,870,000
+                daily transfers or 2,580,000 trips are made with this public transport, and in fact, the share Bus service is only 17% of public 
+                transportation in Tehran. This is while in the horizon of 1404, the share of this public means should reach 25%, which, considering
+                the increase in population, requires the number of buses to reach 11,000 by that year. 
+                <!-- title definition -->
+               <h3> Fast bus system</h3> 
+
+                Veliasr Bus Rapid Transit (BRT) station on Elkhebal St
+                Main article: Tehran fast bus system
+                The first line of the high-speed system (Line 1) was launched in Tehran from the intersection of Tehran- Pars in the east of 
+                Tehran to Azadi Square in the west of Tehran in August 2006, and then it was gradually completed. In the length of 18,700 meters,
+                there are 26 stations located in the middle of the street and 350,000 passengers are moved by it every day. 
+                <!-- title definition -->
+                <h3>Highways</h3> 
+                In recent years, the construction of new bypasses and ring highways (such as Niayesh highway and Tehran- Parchin highway )
+                has grown significantly. Another plan to speed up intra-city transportation is the plan for special electric bus lines, 
+                which are currently operating on the Tehran Pars intersection - Azadi square and the Imam Hossein square - Khorasan square line.
+                The traffic plan is a comprehensive plan that is implemented to reduce the traffic load in the central area of ​​Tehran 
+                from 6:30 am to 5 pm and covers about 33 square kilometers of the city.
+                <!-- title definition -->
+                <h3>Bridges</h3> 
+                Main articles: Bridges of Tehran and the two-story city
+                Nowadays, the principles of traffic engineering have been paid attention to by experts and urban planners in order to have
+                smooth transportation and reduce the traffic load . Urban bridges as uneven intersections are one of the important traffic 
+                engineering structures . In Tehran, as a city with an area of ​​18,814 square kilometers (the area of ​​Greater Tehran) with 8 
+                million residents (excluding the suburbs) and about half of this amount of people who come to work from the suburbs to the city
+                every day, there is an urgent need for uneven intersections and It is felt like bridges. There are currently 180 bridges in Tehran,
+                the most important of which are pedestrian bridges, and another 60 bridges are under construction. Out of these 180 bridges,
+                110 need to be rebuilt and retrofitted 
+
+                The most famous bridges in Tehran are Chubi Bridge , Hafez Bridge , Roman Bridge , Sattar Khan Bridge , Seyed Khandan Bridge ,
+                Sadr Bridge , Karim Khan Zand Bridge , Management Bridge , Geisha Bridge and Fajr Bridg
+            </p>
+        </div>
+    </div>   
+</body>
+</html>

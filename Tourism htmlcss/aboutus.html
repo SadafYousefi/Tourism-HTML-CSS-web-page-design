@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body2">
+
+    <!-- picture -->
+
+    <img src="images/14.jpg" alt="" class="image">
+
+    <h1>Tehran Province</h1>
+
+        
+    <br><br><br><br>
+
+    <div class="box">
+
+        <div class="div1">
+
+             <!-- text from an other external web page -->
+
+            <q>Tehran province (Persian: استان تهران Ostān-e Tehrān) is one of the 31 provinces of Iran.
+            It covers an area of 18,814 square kilometres (7,264 sq mi) and is located to the north of the central plateau of Iran.
+
+            At the time of the National Census of 2006, the province had a population of 13,281,858 in 3,729,010 households.
+            The following census in 2011 counted 12,183,391 people in 3,731,480 households, by which time Karaj, Nazarabad, and Savojbolagh Counties had been separated from the province to become Alborz province.
+            The province was made a part of the First Region with its secretariat located in Tehran, upon the division of the provinces into 5 regions, solely for coordination and development purposes on June 22, 2014.
+            According to the latest census in 2016, the population of the province had increased to 13,267,637 in 4,288,563 households.
+            
+            Tehran province borders Mazandaran province in the north, Qom province in the south, 
+            Semnan province in the east, Alborz province in the west and Markazi province in the southwest. 
+            The metropolis of Tehran is the capital city of the province and of Iran.
+            
+            Tehran province is the richest in Iran, as it contributes approximately 29% of the country's gross domestic product (GDP).
+            Furthermore, it houses approximately 18% of the country's population and is the most industrialized province in Iran, with nearly 94% of its residents living in the cities as of 2016.
+            
+            The province gained importance when Tehran was proclaimed the capital by the Qajar dynasty in 1778.
+            Today, Tehran, with a population of 14 million, is ranked amongst the 40 most populous metropolitan cities of the world.
+            </q>
+        </div>
+    </div>
+        
+    <br><br><br><br>
+
+    <h2 style="text-align:center">Tehran In One Look</h2>
+
+    <!-- a slide show gallery -->
+
+    <div class="slideshow-container">
+        <div class="mySlides1">
+        <img src="images/65.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+        <img src="images/67.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
+
+    <script>
+    let slideIndex = [1,1];
+    let slideId = ["mySlides1", "mySlides2"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+
+    function plusSlides(n, no) {showSlides(slideIndex[no] += n, no);}
+
+    function showSlides(n, no) {let i;
+                                let x = document.getElementsByClassName(slideId[no]);
+                                if (n > x.length) {slideIndex[no] = 1}    
+                                if (n < 1) {slideIndex[no] = x.length}
+                                for (i = 0; i < x.length; i++) { x[i].style.display = "none";}
+                                x[slideIndex[no]-1].style.display = "block";}
+    </script>
+    <br>
+
+     <!-- a 3 coloumn display for photoes and text -->
+
+    <div class="box">
+        <div class="card">
+        <img src="images/62.jpg" alt="" class="image1">
+        <img src="images/64.jpg" alt="" class="image1">
+        <img src="images/63.jpg" alt="" class="image1">
+        </div>
+        <div class="div1">
+        <q>
+            Tehran or Teheran, capital and largest city of Iran, and capital of Tehran province, is located in the northern part of the country. Tehran is Iran's administrative, economic, 
+            and cultural centre as well as the major industrial and transport centre of the region. The city sits on the slopes of the Elburz Mountains, about 1,173m above sea level,
+            on the northwestern fringes of the Kavir desert. Although the name Tehran means "warm place", the climate has marked seasonal contrasts, with short springs and autumns separating cold winters and hot, dry summers.
+
+            Tehran is one of the largest urban centres in the Middle East. In the 1980s the metropolitan region grew rapidly, partly due to surging birthrates following the 1979 Islamic Revolution, 
+            but also because of increased migration from rural to urban areas, as well as an influx of refugees from the Iran-Iraq War and fighting in Afghanistan. The density of the inner city forced many of these migrants to settle in outlying areas.
+
+            The aim of these images acquired by the Landsat family, with a time window (before/after) of 28 years, is to show how Tehran has changed since 1988. The skyline of the city has developed with new areas constructed,
+            particularly in the north west of the city and new infrastructure; such as the area where the airport is now located in the south.
+
+            Another aim of these images is to promote the opportunity to download Landsat data through the ESA portals (or third party mission free catalogue), where images captured every day are made available in near real time to the users and the scientific community.
+        </q>
+        </div>
+    </div> 
+
+    
+    <h1 style="background-color: darkgreen;text-align: center;">TOGETHER Travel Platform!</h1><br>
+
+    <center><h2>Evaluate Us!</h2></center>
+
+    <hr size="4px" width="50%" color="black"><br><br>
+
+    <!-- fill the blanks by user -->
+
+    <fieldset>
+        <legend>General Information</legend><br><br>
+        <input type="number" placeholder="User_ID" size="50"><br><br>
+        <input type="text" placeholder="First Name" size="60"><br><br>
+        <input type="text" placeholder="Last Name" size="70"><br><br>
+        <input type="text" placeholder="Phone Number"size="80"><br><br>
+        <input type="email" placeholder="E-mail"size="100"><br><br>
+        Birthday:
+        <input type="date" placeholder="Birthday"><br><br>
+
+    </fieldset>
+
+    <!-- choose date by user -->
+
+    <fieldset>
+        <legend>Tour Information</legend><br><br>
+        Journey Time:
+        <input type="date" ><br><br>
+    </fieldset>
+
+    <!-- having a single choise -->
+
+    <fieldset>
+        <legend>Gender</legend><br><br>
+        <input type="radio" name="gender" value="male" id="male">
+            <label for="">male</label>
+            <input type="radio" name="gender" value="femal" id="femal">
+            <label for="">femal</label>
+            <input type="radio" name="gender" value="robot" id="robot">
+            <label for="">robot</label>
+    </fieldset>
+
+    <!-- having 2 check box -->
+
+    <fieldset><legend>other info</legend>
+        which languages do you speak?<br>
+        <input type="checkbox"><label for="">English</label><br>
+        <input type="checkbox"><label for="">French</label><br>
+        <input type="checkbox"><label for="">Arabic</label><br>
+        <input type="checkbox"><label for="">persion</label><br>
+        type other languages:
+        <input type="" placeholder="type other languages">
+        <br><br>
+
+        <label for="">Destination:</label>
+        <select name="" id="">
+            select your destination:
+            <option value="">Tehran</option>
+            <option value="">Mashhad</option>
+            <option value="">Gilan</option>
+            <option value="">Shiraz</option>
+        </select>
+        <br><br>
+        Attach the photoes were taken by you during your travel for us!(To display on TV channel)
+        <input type="file">
+    </fieldset>
+    <br>
+
+    <!-- an empty box for users to write messages and send -->
+
+    <center>
+        <h3>Write your suggestions to help us for getting better!</h3>
+        <textarea style="resize: none;" cols="55" rows="15"> نوشتن پیام:</textarea>
+        <form>
+            <input type="submit">برای ارسال کلیک کنید
+        </form>
+    </center>
+
+</body>
+</html>
